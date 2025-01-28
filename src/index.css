@@ -1,0 +1,41 @@
+/* index.css or main.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+/* Your custom styles */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #15803d;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #166534;
+}
+/* Add this to your CSS file */
+#navbar {
+  transition: all 0.3s ease;
+}
+
+#navbar.scrolled {
+  opacity: 0.8;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
